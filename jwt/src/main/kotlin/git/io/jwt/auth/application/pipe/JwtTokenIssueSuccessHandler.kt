@@ -1,8 +1,8 @@
-package com.liftlight.auth.application.pipe
+package git.io.jwt.auth.application.pipe
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.liftlight.auth.domain.TokenValue
-import com.liftlight.auth.service.TokenService
+import git.io.jwt.auth.domain.TokenValue
+import git.io.jwt.auth.service.TokenService
 import io.jsonwebtoken.io.IOException
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse

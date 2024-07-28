@@ -1,4 +1,4 @@
-package com.liftlight.auth.domain
+package git.io.jwt.auth.domain
 
 @JvmInline
 value class TokenValue(

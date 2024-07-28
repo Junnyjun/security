@@ -1,7 +1,7 @@
-package com.liftlight.auth.service
+package git.io.jwt.auth.service
 
-import com.liftlight.auth.domain.Member
-import com.liftlight.auth.domain.MemberRepository
+import git.io.jwt.auth.domain.Member
+import git.io.jwt.auth.domain.MemberRepository
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.User
 import org.springframework.security.core.userdetails.UserDetails

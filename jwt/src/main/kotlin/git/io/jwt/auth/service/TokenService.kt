@@ -1,8 +1,8 @@
-package com.liftlight.auth.service
+package git.io.jwt.auth.service
 
-import com.liftlight.auth.config.JwtExpiredTokenException
-import com.liftlight.auth.domain.Member.Role
-import com.liftlight.auth.domain.TokenParserResponse
+import git.io.jwt.auth.config.JwtExpiredTokenException
+import git.io.jwt.auth.domain.Member.Role
+import git.io.jwt.auth.domain.TokenParserResponse
 import io.jsonwebtoken.*
 import io.jsonwebtoken.security.Keys
 import io.jsonwebtoken.security.SignatureException

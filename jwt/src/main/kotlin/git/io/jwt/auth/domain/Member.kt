@@ -1,4 +1,4 @@
-package com.liftlight.auth.domain
+package git.io.jwt.auth.domain
 
 import jakarta.persistence.*
 import java.util.*

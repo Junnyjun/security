@@ -1,4 +1,4 @@
-package com.liftlight.auth.application.pipe
+package git.io.jwt.auth.application.pipe
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import jakarta.servlet.http.HttpServletRequest
@@ -8,7 +8,6 @@ import org.springframework.http.MediaType
 import org.springframework.security.core.AuthenticationException
 import org.springframework.security.web.authentication.AuthenticationFailureHandler
 import org.springframework.stereotype.Component
-import java.io.IOException
 
 
 @Component

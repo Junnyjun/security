@@ -1,14 +1,12 @@
-package com.liftlight.auth.application.filter
+package git.io.jwt.auth.application.filter
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.liftlight.auth.config.AuthMethodNotSupportedException
-import io.jsonwebtoken.io.IOException
+import git.io.jwt.auth.config.AuthMethodNotSupportedException
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
 import org.springframework.http.HttpMethod
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.Authentication
-import org.springframework.security.core.AuthenticationException
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter
 import org.springframework.security.web.authentication.AuthenticationFailureHandler
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler

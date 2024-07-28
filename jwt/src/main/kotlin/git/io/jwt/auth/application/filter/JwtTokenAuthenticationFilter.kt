@@ -1,6 +1,6 @@
-package com.liftlight.auth.application.filter
+package git.io.jwt.auth.application.filter
 
-import com.liftlight.auth.domain.JwtToken
+import git.io.jwt.auth.domain.JwtToken
 import io.jsonwebtoken.io.IOException
 import jakarta.servlet.FilterChain
 import jakarta.servlet.ServletException

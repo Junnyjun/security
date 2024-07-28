@@ -1,12 +1,12 @@
-package com.liftlight.auth.config
+package git.io.jwt.auth.config
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.liftlight.auth.application.filter.JwtTokenAuthenticationFilter
-import com.liftlight.auth.application.filter.JwtTokenIssueFilter
-import com.liftlight.auth.domain.Member.Role.ADMIN
-import com.liftlight.auth.domain.Member.Role.USER
-import com.liftlight.auth.service.JwtAuthenticationProvider
-import com.liftlight.auth.service.JwtTokenIssueProvider
+import git.io.jwt.auth.application.filter.JwtTokenAuthenticationFilter
+import git.io.jwt.auth.application.filter.JwtTokenIssueFilter
+import git.io.jwt.auth.domain.Member.Role.ADMIN
+import git.io.jwt.auth.domain.Member.Role.USER
+import git.io.jwt.auth.service.JwtAuthenticationProvider
+import git.io.jwt.auth.service.JwtTokenIssueProvider
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.authentication.AuthenticationManager
@@ -66,10 +66,12 @@ class SecurityConfiguration(
         .build()
 
 
-    private fun jwtTokenIssueFilter(authenticationManager: AuthenticationManager): JwtTokenIssueFilter = JwtTokenIssueFilter(AUTHENTICATION_URL, objectMapper, successHandler, failureHandler)
+    private fun jwtTokenIssueFilter(authenticationManager: AuthenticationManager): JwtTokenIssueFilter = JwtTokenIssueFilter(
+        AUTHENTICATION_URL, objectMapper, successHandler, failureHandler)
         .also {  it.setAuthenticationManager(authenticationManager)}
 
-    private fun jwtTokenAuthenticationFilter(authenticationManager: AuthenticationManager): JwtTokenAuthenticationFilter = JwtTokenAuthenticationFilter(API_ROOT_URL, failureHandler)
+    private fun jwtTokenAuthenticationFilter(authenticationManager: AuthenticationManager): JwtTokenAuthenticationFilter = JwtTokenAuthenticationFilter(
+        API_ROOT_URL, failureHandler)
         .also { it.setAuthenticationManager(authenticationManager) }
 
     @Bean

@@ -1,7 +1,7 @@
-package com.liftlight.auth.service
+package git.io.jwt.auth.service
 
-import com.liftlight.auth.domain.JwtToken
-import com.liftlight.auth.domain.TokenParserResponse
+import git.io.jwt.auth.domain.JwtToken
+import git.io.jwt.auth.domain.TokenParserResponse
 import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.core.Authentication
 import org.springframework.security.core.AuthenticationException

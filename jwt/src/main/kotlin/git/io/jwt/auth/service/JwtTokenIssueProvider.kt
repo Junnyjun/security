@@ -1,4 +1,4 @@
-package com.liftlight.auth.service
+package git.io.jwt.auth.service
 
 import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.authentication.BadCredentialsException
